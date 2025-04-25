@@ -10,7 +10,7 @@ COPY src/ /app/src/
 RUN mvn package -DskipTests
 
 # importando a imagem que realmente vai rodar o jar
-FROM openjdk:11-jre-alpine
+FROM openjdk:11-jre-slim
 
 WORKDIR /app
 
